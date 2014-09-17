@@ -1,0 +1,32 @@
+systemd-+-abrtd
+        |-agetty
+        |-atd
+        |-btmplog
+        |-console-kit-dae---63*[{console-kit-dae}]
+        |-crond
+        |-dbus-daemon---{dbus-daemon}
+        |-irqbalance
+        |-lvmetad
+        |-ntpd
+        |-polkitd---5*[{polkitd}]
+        |-rpc.idmapd
+        |-rpc.mountd
+        |-rpc.rquotad
+        |-rpcbind
+        |-rsyslogd---3*[{rsyslogd}]
+        |-sendmail---sendmail
+        |-sendmail
+        |-smartd
+        |-sshd-+-2*[sshd---sshd---csh---vim]
+        |      `-sshd---sshd---csh---pstree
+        |-sssd-+-sssd_autofs
+        |      |-sssd_be
+        |      |-sssd_nss
+        |      `-sssd_pam
+        |-stunnel
+        |-systemd-journal
+        |-systemd-logind
+        |-systemd-udevd
+        |-upsmon---upsmon
+        |-2*[wc]
+        `-xinetd---5*[imapd]

@@ -1,0 +1,24 @@
+Steven Chen
+
+Compile:
+Run 'make' in the same directory as the source code for both the server and the
+client.
+
+Run Time:
+To run the server, you can either type in 'server &' or create a new screen, run
+the server normally, and then detach normally.
+
+To run the client, you have to enter in 'client <WORD>' otherwise you will get a
+usage error from the program.
+
+Notes:
+I had to make some changes to the server files in order to make it function
+correctly. This meant that I had to reimplement the stand-by for-loop to make it
+quit after a pre-set amount of time had passed. This was listed in the spec for
+this assignment.
+
+I used a the string library to help work with the data from the shared memory
+and from the argument parameter for the client. This made the code a lot more
+simple and easy to manage... I had some issues with pushing data back up into
+the shared memory area, however I fixed the problem by implenmenting the string
+copy from the string.h library.
